@@ -1,12 +1,10 @@
 # Summary
 
-=======
 Apps Script runtime: Rhino (no ES6 features)
 IMPORTANT! Let file "info.gs" as a first in list of Files ("info.gs" file define STAGE and PRODUCTION environment)
 
 # Settings
 
-=========
 STAGE deployment ID: AKfycbzg1hAHIUbDNU6ZcG7H9TUD9x7sov1qsvcLa3UALHdH0hUJjnMFvbu5
 (DEPRECATED STAGE deployment ID: AKfycbxIYCTOC8Ff47T74LDGFrLZ9ZMylD6OZum1ZH_23x3BYDeLpNVq0D8dEhahYmIeHjgO
 GCP: https://console.cloud.google.com/home/dashboard?project=around-calendar-addon-stage
@@ -15,8 +13,6 @@ PRODUCTION deployment ID: AKfycbyQuYo56P_79_2OZ97pGL2QnEL3Efu9QYJsgJu4BwIBn1aKXW
 GCP: https://console.cloud.google.com/home/dashboard?project=around-calendar-addon-prod
 
 # Preparation for deployment (for STAGE and PRODUCTION Google Account)
-
-=================================
 
 0. Use a new Google Apps Script IDE script.google.com
 1. Download Chrome Extension https://chrome.google.com/webstore/detail/google-apps-script-github/lfjcgcmkmjjlieihflfhjopckgpelofo?hl=en
@@ -29,8 +25,6 @@ GCP: https://console.cloud.google.com/home/dashboard?project=around-calendar-add
 - Don't Manage manifest file (let it unchecked)
 
 ## Deployment
-
-===============================
 
 0. Login as stage@around.co Google user
 1. Develop a new feature or fix a bug
