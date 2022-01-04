@@ -53,3 +53,13 @@ GCP: https://console.cloud.google.com/home/dashboard?project=around-calendar-add
 15. There is a deployment ID (which is still same, for all future deployment).
     You can double-check, that is connect with Google Workspace Marketplace listing
     https://console.cloud.google.com/apis/api/appsmarket-component.googleapis.com/googleapps_sdk?project=around-calendar-addon-prod
+
+# Add-on Installation
+
+### Stage
+Make sure you are signed in using @around.co google account!
+
+https://workspace.google.com/u/0/marketplace/app/around/486552065831?hl=en&pann=caw
+
+### Production
+https://workspace.google.com/marketplace/app/around/346222652132
