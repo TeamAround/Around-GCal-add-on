@@ -1,0 +1,67 @@
+{
+  "timeZone": "Europe/Paris",
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "DEPRECATED_ES5",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/calendar.addons.current.event.read",
+    "https://www.googleapis.com/auth/calendar.addons.current.event.write",
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/script.scriptapp",
+    "https://www.googleapis.com/auth/calendar.events.readonly",
+    "https://www.googleapis.com/auth/calendar.readonly"
+  ],
+  "urlFetchWhitelist": [
+    "https://*.around.dev/",
+    "https://*.around.video/",
+    "https://*.around.co/"
+  ],
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Calendar",
+        "serviceId": "calendar",
+        "version": "v3"
+      }
+    ],
+    "libraries": [
+      {
+        "userSymbol": "OAuth2",
+        "libraryId": "1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF",
+        "version": "40"
+      }
+    ]
+  },
+  "addOns": {
+    "common": {
+      "name": "Around",
+      "logoUrl": "https://lh3.googleusercontent.com/pw/ACtC-3daC9eDgHrT0T_H3SSJ4fzGLpy3Nv4KKWHWNAuoJZUt6C6y44zlUJfad3GPGjieoqrS2IeeynSF2fjn2mE8uDQ80jW0lLlNQ6f4_uKnJCV4p58ii-4x2B11IwBM-TGFU4YxlfYQDcwtQJiBrySRmeDQ=s96-no?authuser=0",
+      "homepageTrigger": {
+        "runFunction": "startHomepageCard",
+        "enabled": true
+      },
+      "layoutProperties": {
+        "primaryColor": "#191919",
+        "secondaryColor": "#191919"
+      }
+    },
+    "calendar": {
+      "conferenceSolution": [
+        {
+          "onCreateFunction": "createAroundConferenceSolution",
+          "id": "around",
+          "name": "Around Meeting",
+          "logoUrl": "https://lh3.googleusercontent.com/pw/ACtC-3daC9eDgHrT0T_H3SSJ4fzGLpy3Nv4KKWHWNAuoJZUt6C6y44zlUJfad3GPGjieoqrS2IeeynSF2fjn2mE8uDQ80jW0lLlNQ6f4_uKnJCV4p58ii-4x2B11IwBM-TGFU4YxlfYQDcwtQJiBrySRmeDQ=s96-no?authuser=0"
+        }
+      ],
+      "eventOpenTrigger": {
+        "runFunction": "startOpenCard"
+      },
+      "eventUpdateTrigger": {
+        "runFunction": "startUpdateCard"
+      },
+      "currentEventAccess": "READ_WRITE"
+    }
+  }
+}
