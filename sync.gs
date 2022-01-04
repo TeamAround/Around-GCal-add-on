@@ -143,6 +143,7 @@ function updateConference(calendarEvent) {
     console.info("CalendarEvents.status: cancelled");
     if (aroundRoomId !== null && aroundRoomKey !== null) {
       //console.info("Call Around API deleteEvent");
+      // Don't delete the room when event is cancelled!
       //var res = AroundApp().deleteMeeting(aroundRoomId, aroundRoomKey);
       //console.log(res)
     }
